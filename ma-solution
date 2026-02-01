@@ -1,0 +1,13 @@
+public class Kata {
+  public static String findNeedle(Object[] haystack) {
+    // Your code here
+      int index = 0;
+      for(Object stack : haystack){
+        if ("needle".equals(stack)) {
+            return "found the needle at position " + index;
+        }
+        index++;
+      }
+      return "needle not found";
+  }
+}
